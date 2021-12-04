@@ -45,6 +45,9 @@ async function search(){
         }
     })
     console.log(result);
+    if(result.length==0){
+        document.getElementById('dynamic-content').innerHTML=`No country found!`;
+    }
     result.forEach(element => {
         let div=document.createElement('div');
         let img=document.createElement('img');
