@@ -3,9 +3,17 @@
   <head>  
     <script src="env.js"></script>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body onload="renderDynamicContent()">
-    <h1>Hello World</h1>
-    <div id="dynamic-content"></div>
+    
+    <nav>
+      <input type="text" name="search" id="search-box" placeholder="Search Country">
+      <button onclick="search()">Search</button>
+    </nav>
+    <div id="dynamic-content" class="dynamic-content">
+     
+
+    </div>
   </body>
 </html>
